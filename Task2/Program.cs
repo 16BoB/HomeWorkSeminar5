@@ -27,17 +27,17 @@ int CalculateSumElementsOddIndex (int[] arr) {
     return sum;
 }
 
-Console.WriteLine("Введите размер массива: ");
+Console.WriteLine("Enter the size of the array:");
 int sizeArr = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Введите минимальное число в массиве: ");
+Console.WriteLine("Enter the minimum number in the array:");
 int minNumInArr = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Введите максимальное число в массиве: ");
+Console.WriteLine("Enter the maximum number in the array:");
 int maxNumInArr = Convert.ToInt32(Console.ReadLine());
 
 int[] userArr = CreateRandomArr(sizeArr, minNumInArr, maxNumInArr);
 
 ShowArr(userArr);
 
-Console.WriteLine(CalculateSumElementsOddIndex(userArr));
+Console.WriteLine("The sum of the numbers in odd positions is: " + CalculateSumElementsOddIndex(userArr));
